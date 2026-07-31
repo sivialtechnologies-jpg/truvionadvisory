@@ -1,47 +1,38 @@
 # Truvion Advisory Website
 
-A simple static website for Truvion Advisory built with plain HTML and CSS.
+A polished static website for Truvion Advisory with a modern, elegant consulting brand presence.
 
 ## Files
 
-- `index.html` - Home page
-- `services.html` - Services overview
-- `approach.html` - Approach and methodology
+- `index.html` - Home page with Apple-like product styling and a refined hero experience
+- `services.html` - Services overview with clear capability sections
+- `approach.html` - Structured consultancy approach
 - `about.html` - Mission, vision, values, and global perspective
-- `contact.html` - Contact details and engagement information
-- `styles.css` - Shared styling for all pages
-
-## Editing
-
-Update page content directly in the HTML files. All pages share the same stylesheet for consistent branding.
+- `contact.html` - Contact details and engagement call to action
+- `styles.css` - Main site styling
+- `favicon.svg` - Branded logo asset used across the site
+- `CNAME` - Custom domain configuration for GitHub Pages
 
 ## Preview
 
-Open any HTML file in a browser, or host using a local static server:
+Open `index.html` in a browser to view the site locally.
 
-```bash
-python3 -m http.server 8000
-```
+## Publish
 
-Then open http://localhost:8000 in your browser.
+To publish using GitHub Pages:
 
-## Custom domain setup
+1. Commit and push these files to the repository.
+2. In GitHub repo settings, enable Pages from the `main` branch and root folder.
+3. Ensure `CNAME` contains `truvionadvisory.com`.
 
-A `CNAME` file has been added with the custom domain:
+## DNS
 
-```text
-truvionadvisory.com
-```
+For GitHub Pages custom domain, add GoDaddy DNS records:
 
-To publish on GitHub Pages:
+- `A @ 185.199.108.153`
+- `A @ 185.199.109.153`
+- `A @ 185.199.110.153`
+- `A @ 185.199.111.153`
+- `CNAME www sivialtechnologies-jpg.github.io`
 
-1. Create a GitHub repository and push these files.
-2. In repository settings, enable GitHub Pages from the main branch and root directory.
-3. Confirm the custom domain is set in GitHub Pages settings or by the `CNAME` file.
-4. Configure DNS for `truvionadvisory.com`:
-   - A records to GitHub Pages:
-     - `185.199.108.153`
-     - `185.199.109.153`
-     - `185.199.110.153`
-     - `185.199.111.153`
-   - CNAME record for `www` pointing to your GitHub Pages domain.
+Once DNS propagates and GitHub Pages is configured, the site should be visible at `https://truvionadvisory.com`.
